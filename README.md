@@ -1,3 +1,10 @@
+![License](https://img.shields.io/badge/license-MIT-blue)
+[![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=000)](#)
+![MongoDB](https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=for-the-badge&logo=mongodb&logoColor=white)
+![scikit-learn](https://img.shields.io/badge/scikit--learn-%23F7931E.svg?style=for-the-badge&logo=scikit-learn&logoColor=white)
+![NumPy](https://img.shields.io/badge/numpy-%23013243.svg?style=for-the-badge&logo=numpy&logoColor=white)![Pandas](https://img.shields.io/badge/pandas-%23150458.svg?style=for-the-badge&logo=pandas&logoColor=white)
+
+
 # Stack Overflow Tag Prediction Research + Website
 
 This repository combines two related parts of the same project:
@@ -105,4 +112,6 @@ module.exports.connect = async () => {
 };
 ```
 
-The original notebook mixed experimentation with the final pipeline. This cleaned version keeps the main story readable and leaves the heavier experiments as research extensions.
+# License
+
+This project is licensed under the **MIT License**.
