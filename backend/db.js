@@ -2,7 +2,7 @@ const mongoose = require("mongoose");
 
 const url = "";
 
-module.exports.connect = () => {
+module.exports.connect = () => { 
   mongoose
     .connect(url, {
       useNewUrlParser: true,
