@@ -1,7 +1,7 @@
 const mongoose = require("mongoose");
 
 const url =
-  "mongodb+srv://root:root@so-clone.ieomehp.mongodb.net/stackoverflow?retryWrites=true&w=majority";
+  "";
 
 module.exports.connect = () => {
   mongoose
