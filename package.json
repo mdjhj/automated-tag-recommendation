@@ -1,0 +1,45 @@
+{
+  "name": "stackoverflow-clone",
+  "version": "1.0.0",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon --watch backend --exec node backend/server.js",
+    "server": "nodemon backend/server.js",
+    "client": "npm start --prefix frontend",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix frontend && npm run build --prefix frontend"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/akkySrivastava/stackoverflow-clone-mern.git"
+  },
+  "author": "Code with akky",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/akkySrivastava/stackoverflow-clone-mern/issues"
+  },
+  "homepage": "https://github.com/akkySrivastava/stackoverflow-clone-mern#readme",
+  "dependencies": {
+    "@emotion/react": "^11.9.3",
+    "@emotion/styled": "^11.9.3",
+    "@mui/icons-material": "^5.8.4",
+    "@mui/material": "^5.8.6",
+    "axios": "^0.21.4",
+    "body-parser": "^1.20.0",
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "express": "^4.18.1",
+    "firebase": "^9.8.4",
+    "http-proxy-middleware": "^2.0.6",
+    "mongoose": "^6.4.2",
+    "nodemon": "^2.0.18",
+    "npx": "^10.2.2",
+    "react-html-parser": "^2.0.2",
+    "react-quill": "^1.3.5",
+    "react-router-dom": "^5.2.0",
+    "react-tag-input-component": "^1.0.7"
+  },
+  "devDependencies": {},
+  "keywords": [],
+  "description": ""
+}

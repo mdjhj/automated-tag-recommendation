@@ -1,0 +1,259 @@
+.add-question {
+  display: flex;
+  width: 100%;
+  background-color: rgba(238, 238, 238, 0.568);
+  height: 100%;
+  justify-content: center;
+}
+
+.add-question-container {
+  padding: 30px 15px;
+  display: flex;
+  flex-direction: column;
+  width: 95%;
+  max-width: 800px;
+}
+
+.head-title {
+  display: flex;
+  width: 100%;
+}
+
+.head-title>h1 {
+  margin-bottom: 20px;
+  font-weight: 400;
+  font-size: 26px;
+}
+
+.question-container {
+  display: flex;
+  padding: 15px;
+  background-color: #fff;
+  border: 1px solid #eee;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+    0 6px 20px 0 rgba(66, 42, 42, 0.19);
+}
+
+.question-options {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.question-option {
+  /* display: flex; */
+  flex-direction: column;
+  width: 100%;
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  margin: 10px 0px;
+  font-size: 0.9rem;
+}
+
+.tags-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.title,
+.tags-header>h3 {
+  color: rgba(0, 0, 0, 0.8);
+  font-weight: 500;
+}
+
+.title,
+.tags-header>small {
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.title>input {
+  margin: 5px 0px;
+  padding: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 3px;
+  outline: none;
+}
+
+.title>input::placeholder {
+  color: #ddd;
+}
+
+.title>input:focus {
+  border: 1px solid #0054ff;
+  box-shadow: 0 4px 8px 0 #0055ff23, 0 6px 20px 0 #0055ff11;
+}
+
+.quill {
+  height: 100%;
+}
+
+.react-quill {
+  margin: 10px 0;
+  border-radius: 10px;
+}
+
+.ql-editor {
+  height: 200px;
+}
+
+.button {
+  max-width: fit-content;
+  margin: 20px 0px;
+}
+
+button:hover {
+  background-color: #053086;
+}
+
+.tag-container {
+  display: flex;
+  flex-direction: row;
+  margin: 2vh 0vh;
+}
+
+.show-tags {
+  width: 75vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.show-feedback {
+  display: block;
+}
+
+.hide-feedback {
+  display: none;
+  opacity: 0;
+  pointer-events: none;
+  visibility: none;
+  z-index: -1;
+}
+
+.show-feedback>p {
+  cursor: pointer;
+  color: #0095ff;
+}
+
+.predicted-tag {
+  background-color: grey;
+  padding: 7px;
+  color: white;
+  border-radius: 10px;
+  font-size: large;
+  font-weight: bolder;
+  cursor: pointer;
+}
+
+.predicted-tag:hover {
+  background-color: rgb(85, 84, 84);
+}
+
+.feedback-modal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.close-button {
+  margin: 0;
+  padding: 0.75%;
+}
+
+.feedback-modal .feedback-top {
+  margin-top: 1%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.feedback-modal .feedback-top>h1 {
+  margin-bottom: 5%;
+  border-bottom-style: solid;
+  border-width: 5px;
+  border-bottom-color: #0054ff;
+}
+
+.feedback-modal .feedback-top>p {
+  color: rgba(0, 0, 0, 0.8);
+  font-weight: 500;
+  font-size: large;
+}
+
+.feedback-modal .slider {
+  width: 100%;
+}
+
+.feedback-value {
+  color: #0054ff;
+  font-weight: 700;
+  font-size: xx-large;
+}
+
+.feedback-modal .submit-button {
+  margin: 2% 0px;
+  font-weight: 500;
+  font-size: large;
+}
+
+.rangeslider-horizontal {
+  height: 12px;
+  border-radius: 10px;
+}
+
+.rangeslider-horizontal .rangeslider__fill {
+  height: 100%;
+  background-color: #053086;
+  border-radius: 10px;
+  top: 0;
+}
+
+.rangeslider,
+.rangeslider .rangeslider__fill {
+  display: block;
+  box-shadow: inset 0 1px 3px rgb(0 0 0 / 40%);
+}
+
+.rangeslider {
+  margin: 20px 100px;
+  position: relative;
+  background: #e6e6e6;
+  touch-action: none;
+}
+
+.rangeslider .rangeslider__handle {
+  background: #fff;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  display: inline-block;
+  position: absolute;
+  box-shadow: 0 1px 3px rgb(0 0 0 / 40%), 0 -1px 3px rgb(0 0 0 / 40%);
+}
+
+.rangeslider-horizontal .rangeslider__handle {
+  width: 30px;
+  height: 30px;
+  border-radius: 30px;
+  top: 50%;
+  transform: translate3d(-50%, -50%, 0);
+}
+
+.rangeslider-horizontal .rangeslider__handle:after {
+  content: ' ';
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  top: 6px;
+  left: 6px;
+  border-radius: 50%;
+  background-color: #dadada;
+  box-shadow: 0 1px 3px rgb(0 0 0 / 40%) inset, 0 -1px 3px rgb(0 0 0 / 40%) inset;
+}
+
+.rangeslider__handle-tooltip {
+  display: none;
+}
